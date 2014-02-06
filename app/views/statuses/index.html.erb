@@ -3,10 +3,10 @@
 </div>
 
 
-<%= link_to "Post Status", new_status_path, class: "btn btn-success" %>
+<%= link_to "Post New Status", new_status_path, class: "btn btn-success" %>
 
 <% @statuses.each do |status| %>
-<div class="status">
+<div style = "padding-top: 10px;" class="status">
   <strong><%= status.user.full_name %></strong>
   <p><%= status.content %></p>
   <div class="meta">

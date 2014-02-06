@@ -5,9 +5,18 @@ module ApplicationHelper
 		when :alert
 			"alert-danger"
 		when :notice
-			"alert-sucess"
+			"alert-success"
 		else
 			""
 		end
+    end
+
+    def redirect(boolean)
+    	case boolean
+    	when true
+    		"/feed"
+    	when false
+    		"/login"
+    	end
     end
 end
