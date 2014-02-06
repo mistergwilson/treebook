@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
 
   validates :last_name, presence: true
 
-  validates :user_name, presence: true, uniqueness: true, format: { with: /a-zA-Z0-9_-/, message: 'Please use only letters, numbers, underscores, or dashes in username.'}
+  validates :user_name, presence: true, uniqueness: true, format: { with: /[a-zA-Z0-9_-]+/, message: 'Please use only letters, numbers, underscores, or dashes in username.'}
 
   has_many :statuses 
   
