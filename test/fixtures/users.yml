@@ -3,3 +3,10 @@ gregory:
     last_name: "Wilson"
     email: "mistergwilson@gmail.com"
     user_name: "mistergwilson"
+
+
+jim:
+    first_name: "Jim"
+    last_name: "Hoskins"
+    email: "jim@teamtreehouse.com"
+    user_name: "jimhoskins"
