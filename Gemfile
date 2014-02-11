@@ -9,6 +9,10 @@ gem 'devise'
 #Styled form
 gem 'simple_form'
 
+group :test do
+	gem 'shoulda'
+end
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'
