@@ -1,5 +1,10 @@
 <div class="page-header">
 	<h1><%= @user.full_name %></h1>
+	<% if @user == current_user %>
+	
+	<% else %>
+		<%= link_to "Add as Friend?", new_user_friendship_path(friend_id: @user), class: "btn btn-primary" %>
+	<% end %>
 </div>
 
 <% if @statuses %>

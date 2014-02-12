@@ -18,6 +18,11 @@ class User < ActiveRecord::Base
   	first_name + " " + last_name
   end
 
+  def to_param
+    user_name
+  end
+
+
   def gravatar_url
     stripped_email = email.strip
     downcased_email = stripped_email.downcase
